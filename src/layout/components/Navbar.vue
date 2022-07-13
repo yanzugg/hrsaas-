@@ -8,6 +8,12 @@
     <!-- <breadcrumb class="breadcrumb-container" /> -->
 
     <div class="right-menu">
+      <!-- 多语言组件 -->
+      <LangSelect class="right-menu-item" />
+      <!-- 全屏组件 -->
+      <ScreenFull class="right-menu-item" />
+      <!-- 切换主题组件 -->
+      <ThemePicker class="right-menu-item" />
       <el-dropdown class="avatar-container" trigger="click">
         <div class="avatar-wrapper">
           <img v-imagerror="defaultImg" :src="staffPhoto" class="user-avatar">
@@ -62,6 +68,7 @@ export default {
       await this.$store.dispatch('user/logout')
       this.$router.push(`/login?redirect=${this.$route.fullPath}`)
     }
+
   }
 }
 </script>
@@ -125,7 +132,7 @@ export default {
       height: 100%;
       font-size: 18px;
       color: #5a5e66;
-      vertical-align: text-bottom;
+      vertical-align: midd  le;
 
       &.hover-effect {
         cursor: pointer;

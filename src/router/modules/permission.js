@@ -10,6 +10,7 @@ export default {
     // 二级路由的path什么都不用写的时候，此时它表示二级路的默认路由
     path: '', // 这里什么都不用写，表示/permission 不但有layout布局 =>权限管理主页
     component: () => import('@/views/permission'),
+    name: 'permissions',
     // 路由元信息 其实就是一个存储数据的地方 可以放任何内容
     meta: {
       title: '权限管理', // 这里为什么要用title 因为左侧导航栏读取了这里的title属性
